@@ -1,3 +1,26 @@
-<p>
-  songs works!
-</p>
+<table class="table">
+  <thead>
+    <tr>
+      <th class="h4">Title</th>
+      <th class="h4">Minutes</th>
+      <th class="h4">Seconds</th>
+      <th class="h4">Interpreter</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let song of songs">
+      <td>
+        <dd>{{song.title}}</dd>
+      </td>
+      <td>
+        <dd>{{song.minutes}}</dd>
+      </td>
+      <td>
+        <dd>{{song.seconds}}</dd>
+      </td>
+      <td>
+        <dd>{{song.interpreter}}</dd>
+      </td>
+    </tr>
+  </tbody>
+</table>
