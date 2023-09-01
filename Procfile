@@ -1,1 +1,1 @@
-web: node server.js
+web: ts-node set-env.ts && node server.js

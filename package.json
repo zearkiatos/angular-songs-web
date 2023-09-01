@@ -5,7 +5,7 @@
     "add-hooks": "scripts/add-hooks.sh",
     "config": "ts-node set-env.ts",
     "ng": "ng",
-    "start:heroku": "node server.js",
+    "start:heroku": "npm run config && node server.js",
     "start": "npm run config && ng serve",
     "build": "npm run config && ng build",
     "watch": "npm run config && ng build --watch --configuration development",
